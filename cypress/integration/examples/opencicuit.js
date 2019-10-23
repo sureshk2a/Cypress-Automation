@@ -12,10 +12,11 @@ describe("Login",function()
 {
     it("Login to call",function()
     {
-        var firstName = cy.get("")
+        var firstName = cy.get("#id_guestLoginViewFirstName")
         firstName.type("Suresh")
-        var secondName = cy.get("")
+        var secondName = cy.get("#id_guestLoginViewLastName")
         secondName.type("Kumar")
-        
+        var checkbox =  cy.get(".item-text").click()
+        cy.get(".button").click()
     })
 })
