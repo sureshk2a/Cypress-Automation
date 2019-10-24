@@ -23,19 +23,12 @@ describe('My Third Test', function() {
         }
 
       })
+
+      cy.get(".brand").then(function(logoelement)
+      {
+        cy.log(logoelement.text())
+      })
       
     })
   })
 
-describe("Check Cart",function()
-{
-  it("Check the cart count",function()
-  {
-    cy.get(".brand").then(function(ele)
-    {
-      cy.log(ele.text())
-    })
-
-  })
-})
-  
